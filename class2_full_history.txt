@@ -1,0 +1,305 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2908
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ubuntu@ip-172-31-16-111:~$ cat ~/class2_full_history.txt\
+    1  cat /etc/os-release\
+    2  uname -r\
+    3  uname -a\
+    4  lscpu | head -n 8\
+    5  free -h\
+    6  cat /etc/os-release\
+    7  uname -r\
+    8  uname -a\
+    9  lscpu | head -n 8\
+   10  free -h\
+   11  lsblk | grep -v loop\
+   12  echo $SHELL\
+   13  bash --version | head -n 1\
+   14  which ls\
+   15  ldd /bin/ls | head -n 3\
+   16  which nano\
+   17  ls /home\
+   18  head -n 2 /usr/share/common-licenses/GPL-2\
+   19  who\
+   20  ps -e | wc -l\
+   21  ls -l /etc/shadow\
+   22  uname -m\
+   23  which apt dnf yum\
+   24  ls /\
+   25  df -h /\
+   26  findmnt /\
+   27  ls /home\
+   28  echo $HOME\
+   29  sudo ls -ld /root\
+   30  ls /etc | head -n 5\
+   31  ls /var/log | head -n 5\
+   32  ls -ld /bin\
+   33  ls /bin | head -n 5\
+   34  ls /usr\
+   35  ls /boot | head -n 3\
+   36  ls /dev | head -n 3\
+   37  ls -A /mnt\
+   38  ls -ld /tmp\
+   39  ls /opt\
+   40  cd /etc\
+   41  pwd\
+   42  cd /var/log\
+   43  pwd\
+   44  cd\
+   45  pwd\
+   46  tty\
+   47  echo $0\
+   48  echo $SHELL\
+   49  ps -p $$\
+   50  cat /etc/shells\
+   51  mkdir Documents projects\
+   52  touch notes.txt\
+   53  pwd\
+   54  ls\
+   55  whoami\
+   56  ls -l /home\
+   57  LS\
+   58  ls -l /etc/hostname /etc/hosts\
+   59  ls -l -a ~\
+   60  ls -la ~\
+   61  whoami && pwd && date\
+   62  cd ~\
+   63  pwd\
+   64  ls\
+   65  ls -l\
+   66  ls -a\
+   67  ls -lh /var/log/auth.log /var/log/syslog\
+   68  ls -la ~ | head -n 4\
+   69  cd /var/log\
+   70  cd ~\
+   71  pwd\
+   72  cd /\
+   73  pwd\
+   74  cd -\
+   75  pwd\
+   76  cd /var/log\
+   77  cd .\
+   78  pwd\
+   79  cd /home/ubuntu/Documents\
+   80  pwd\
+   81  cd ..\
+   82  cd Documents\
+   83  pwd\
+   84  cd ../projects\
+   85  pwd\
+   86  cd ~\
+   87  cd ../../var/log\
+   88  pwd\
+   89  cd ~\
+   90  clear\
+   91  history | tail -n 6\
+   92  history\
+   93  cd ~\
+   94  mkdir -p linux_lab\
+   95  cd linux_lab\
+   96  pwd\
+   97  touch file1.txt file2.txt\
+   98  ls\
+   99  ls -l file1.txt\
+  100  touch file1.txt\
+  101  ls -l file1.txt\
+  102  mkdir backup\
+  103  mkdir folder1 folder2 folder3\
+  104  ls\
+  105  mkdir projects2/linux/week1\
+  106  mkdir -p projects/linux/week1\
+  107  ls -R projects\
+  108  nano file1.txt\
+  109  cat file1.txt\
+  110  cp file1.txt backup/\
+  111  ls backup\
+  112  cp file1.txt file1_copy.txt\
+  113  cp file1.txt file2.txt /home/ubuntu/Documents/\
+  114  ls /home/ubuntu/Documents\
+  115  cp projects projects_backup\
+  116  cp -r projects projects_backup\
+  117  ls\
+  118  cat file1.txt\
+  119  mv file2.txt renamed.txt\
+  120  mv file1_copy.txt backup/\
+  121  mv ~/notes.txt ~/Documents/\
+  122  ls\
+  123  ls backup\
+  124  ls ~/Documents\
+  125  cat file1.txt\
+  126  find . -name "file1.txt"\
+  127  touch temp1.txt temp2.txt\
+  128  rm temp1.txt temp2.txt\
+  129  rmdir folder1 folder2 folder3\
+  130  rmdir backup\
+  131  rm projects_backup\
+  132  rm -r projects_backup\
+  133  ls\
+  134  touch temp3.txt\
+  135  rm -i temp3.txt\
+  136  mkdir -p scratch/a/b\
+  137  ls scratch\
+  138  rm -rf scratch\
+  139  ls scratch\
+  140  ls\
+  141  ls backup\
+  142  cd ~/linux_lab\
+  143  seq 1 25 | sed 's/^/Log entry /' > logfile.txt\
+  144  wc -l logfile.txt\
+  145  cat file1.txt\
+  146  less logfile.txt\
+  147  head -n 5 logfile.txt\
+  148  tail -n 3 logfile.txt\
+  149  tail -f /var/log/syslog\
+  150  nano welcome.txt\
+  151  vim --version\
+  152  vim vim_notes.txt\
+  153  cat vim_notes.txt\
+  154  find /home -name "file1.txt"\
+  155  find /home -type d | head -n 6\
+  156  find /home -name "*.txt"\
+  157  sudo apt install -y plocate\
+  158  sudo apt update\
+  159  sudo apt install -y plocate\
+  160  touch ~/brandnew.txt\
+  161  locate brandnew.txt\
+  162  sudo updatedb\
+  163  locate brandnew.txt\
+  164  ls ~/linux_lab\
+  165  history\
+  166  whoami\
+  167  id\
+  168  id root\
+  169  cut -d: -f1,3 /etc/passwd | head -n 5\
+  170  getent passwd ubuntu\
+  171  getent passwd daemon www-data\
+  172  sudo su - www-data\
+  173  head -n 2 /etc/passwd\
+  174  tail -n 1 /etc/passwd\
+  175  cat /etc/shadow\
+  176  sudo head -n 2 /etc/shadow\
+  177  head -n 3 /etc/group\
+  178  getent group sudo\
+  179  sudo cp -p /etc/passwd /tmp/passwd.backup\
+  180  ls -l /tmp/passwd.backup\
+  181  apt update\
+  182  sudo apt update\
+  183  sudo whoami\
+  184  su -\
+  185  sudo su -\
+  186  sudo -i\
+  187  echo $HOME\
+  188  exit\
+  189  history\
+  190  sudo useradd hamza\
+  191  getent passwd hamza\
+  192  id hamza\
+  193  ls -ld /home/hamza\
+  194  sudo userdel hamza\
+  195  sudo useradd -m hamza\
+  196  ls -ld /home/hamza\
+  197  ls -A /home/hamza\
+  198  sudo passwd hamza\
+  199  sudo adduser sara\
+  200  sudo usermod -s /bin/bash hamza\
+  201  getent passwd hamza\
+  202  su - hamza\
+  203  sudo chage -l hamza\
+  204  sudo chage -M 90 hamza\
+  205  sudo chage -l hamza | head -n 3\
+  206  ps -u sara\
+  207  sudo find / -xdev -user sara 2>/dev/null | head -n 4\
+  208  sudo useradd -m tempuser\
+  209  sudo userdel tempuser\
+  210  ls -ld /home/tempuser\
+  211  sudo rm -r /home/tempuser\
+  212  sudo userdel -r sara\
+  213  getent passwd sara\
+  214  ls -d /home/sara\
+  215  groups\
+  216  id ubuntu\
+  217  getent group sudo\
+  218  sudo adduser student1\
+  219  next\
+  220  sudo groupadd developers\
+  221  getent group developers\
+  222  sudo usermod -aG developers student1\
+  223  id student1\
+  224  groups student1\
+  225  sudo usermod -aG developers hamza\
+  226  getent group developers\
+  227  sudo usermod -aG users student1\
+  228  id student1\
+  229  sudo usermod -G developers student1\
+  230  id student1\
+  231  sudo passwd student1\
+  232  sudo chage -l student1 | head -n 3\
+  233  sudo usermod -aG developers ubuntu\
+  234  groups\
+  235  groups ubuntu\
+  236  exit\
+  237  groups\
+  238  sudo gpasswd -d student1 developers\
+  239  groups student1\
+  240  sudo groupadd testers\
+  241  sudo groupmod -n qa testers\
+  242  getent group qa\
+  243  sudo groupdel qa\
+  244  getent group qa\
+  245  getent group developers\
+  246  groups student1\
+  247  mkdir ~/permlab\
+  248  cd ~/permlab\
+  249  echo "Linux permissions lab" > notes.txt\
+  250  echo 'echo "Script is running"' > script.sh\
+  251  mkdir projects\
+  252  ls -l notes.txt\
+  253  stat -c '%A %a %U %G %n' notes.txt\
+  254  ./script.sh\
+  255  chmod u+x script.sh\
+  256  ls -l script.sh\
+  257  ./script.sh\
+  258  chmod 755 script.sh\
+  259  chmod 644 notes.txt\
+  260  ls -l notes.txt script.sh\
+  261  chmod g+w notes.txt\
+  262  chmod o-r notes.txt\
+  263  ls -l notes.txt\
+  264  stat -c '%A %a %n' notes.txt\
+  265  chmod u-x projects\
+  266  cd projects\
+  267  chmod u+x projects\
+  268  cd projects\
+  269  pwd\
+  270  cd ..\
+  271  mkdir -p projects/app/src\
+  272  touch projects/app/src/main.py\
+  273  chmod -R 755 projects/\
+  274  ls -lR projects\
+  275  sudo chown hamza notes.txt\
+  276  ls -l notes.txt\
+  277  sudo chown hamza:developers script.sh\
+  278  ls -l script.sh\
+  279  sudo chown -R hamza:developers projects/\
+  280  ls -ld projects projects/app\
+  281  sudo chgrp developers notes.txt\
+  282  ls -l notes.txt\
+  283  sudo chgrp -R developers projects/\
+  284  sudo mkdir -p /srv/project\
+  285  sudo chown -R root:developers /srv/project\
+  286  sudo chmod -R 775 /srv/project\
+  287  ls -ld /srv/project\
+  288  touch /srv/project/index.html\
+  289  sudo -u hamza touch /srv/project/hamza.html\
+  290  sudo -u student1 touch /srv/project/fail.html\
+  291  ls -l /srv/project\
+  292  whoami\
+  293  history | tail -n 100 > ~/class2_commands.txt\
+  294  wc -l ~/class2_commands.txt\
+  295  history > ~/class2_full_history.txt\
+  296  history | tail -n 100 > ~/class2_commands.txt\
+  297  history > ~/class2_full_history.txt}
